@@ -6,7 +6,7 @@ This repository contains the official implementation and research materials for 
 >  
 > Department of Computer Science  
 > [University Name]  
-> Author: Sungmin Yang
+> Author: Kyuhee Kim
 
 ---
 
