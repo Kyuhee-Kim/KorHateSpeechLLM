@@ -65,7 +65,7 @@ Notes:
 - The ensemble combines predictions from the selected strategy representatives.
 
 | Strategy | Model | ACC | F1 (Micro) | F1 (Macro) | Precision | Recall |
-|---|---|:---:|---:|---:|---:|---:|
+|---|---|:---:|:---:|:---:|:---:|:---:|
 | Baseline | GPT-5.1 Standard | 0.5383 | 0.6315 | 0.5909 | 0.8157 | 0.4864 |
 | RAG | Gemini2.5-Flash | 0.7710 | 0.7484 | **0.7426** | 0.7309 | 0.7630 |
 | CoT | Gemini2.5-Flash | **0.7792** | 0.7340 | 0.7358 | 0.7136 | **0.7708** |
