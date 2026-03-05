@@ -67,10 +67,10 @@ Notes:
 | Setting | Representative | ACC | F1 (Micro) | F1 (Macro) | Precision | Recall |
 |---|---|---:|---:|---:|---:|---:|
 | Baseline | GPT-5.1 Standard | 0.5383 | 0.6315 | 0.5909 | 0.8157 | 0.4864 |
-| RAG | Gemini-RAG | 0.7710 | 0.7484 | 0.7426 | 0.7309 | 0.7630 |
-| CoT | Gemini-CoT | 0.7792 | 0.7340 | 0.7358 | 0.7136 | 0.7708 |
-| Persona | GPT-Persona | 0.5269 | 0.6282 | 0.5134 | 0.8479 | 0.4014 |
-| Ensemble | Strategy ensemble | 0.7429 | 0.7673 | 0.7323 | 0.8182 | 0.6700 |
+| RAG | Gemini2.5-Flash | 0.7710 | 0.7484 | **0.7426** | 0.7309 | 0.7630 |
+| CoT | Gemini2.5-Flash | **0.7792** | 0.7340 | 0.7358 | 0.7136 | **0.7708** |
+| Persona | GPT-5.2 Extended | 0.5269 | 0.6282 | 0.5134 | **0.8479** | 0.4014 |
+| Ensemble | RAG+CoT+Persona | 0.7429 | **0.7673** | 0.7323 | 0.8182 | 0.6700 |
 
 ## 📝 How to Cite
 
