@@ -14,7 +14,7 @@ This repository provides the data, notebooks, and analysis files for a Korean mu
 Key contributions:
 - Unified multiple Korean hate-speech datasets into a 9 labels multi-label scheme.
 - Compared prompt strategies (Baseline, RAG, CoT, Persona) under the same evaluation setting.
-- Evaluated Gemini, GPT, and Gemma models; GPT-5.1 and GPT-5.2 were tested with both standard and extended thinking variants.
+- Conducted a controlled comparison of multiple LLMs under the same experimental setting.
 - Reported and statistically validated the results using McNemar’s test.
 - Built a strategy-based ensemble to examine how combining prediction tendencies affects performance in Korean hate speech detection.
 
