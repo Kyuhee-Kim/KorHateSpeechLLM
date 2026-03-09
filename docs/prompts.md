@@ -37,9 +37,11 @@ Label definitions
 - 6: Race
 - 7: Religion
 - 8: Not hate speech
+```
 
-**RAG prompt**
+## RAG prompt
 
+```text
 Task
 Using {REFERENCE_DATASET} as a retrieval source, predict the label(s) for each comment in {EVALUATION_DATASET} among 9 labels.
 Hate speech may receive multi-label.
@@ -47,9 +49,11 @@ Label 8 (not hate speech) is assigned only as a single label.
 
 Label Definitions
 {LABEL_DEFINITIONS}
+```
 
-**CoT prompt**
+## CoT prompt
 
+```text
 Task
 Predict the label(s) for each comment in {EVALUATION_DATASET} among 9 labels.
 Hate speech may receive multi-label.
@@ -69,9 +73,11 @@ Label Definitions
 Example
 Comment: If a woman had acted like Choi Soo-jong, people would have gone crazy---"Why is only the woman speaking politely? Is she some kind of servant?", "Poor thing, get a divorce.", "This is sexist TV, cancel the show.", and so on. But when a man does it, they call it "nice" and say they are a loving couple. This is exactly why I cannot help but hate those "Kimchi girls."
 Final label(s): 3,5
+```
 
 **Persona prompt**
 
+```text
 You are Korean and an expert in linguistics and content moderation.
 Your primary role is to analyze the given text, accurately identify and classify language-based hate speech, and, when necessary, briefly explain the rationale for your decision.
 
@@ -95,6 +101,4 @@ Label 8 (not hate speech) is assigned only as a single label.
 
 Label Definitions
 {LABEL_DEFINITIONS}
-
-Label Definitions
-{LABEL_DEFINITIONS}
+```
