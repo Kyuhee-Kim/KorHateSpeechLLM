@@ -20,8 +20,8 @@ This document contains the prompt templates used in the experiments.
 - 7: Religion — Insults or hatred targeting a religion or religious group.
 - 8: Not Hate Speech — Non-hate content; none of the above categories apply.
 
-Baseline prompt
-```text
+## Baseline prompt
+
 Task
 Predict the label(s) for each comment in {EVALUATION_DATASET}.
 Each comment may receive multi-label.
@@ -37,8 +37,8 @@ Label definitions
 - 7: Religion
 - 8: Not hate speech
 
-RAG prompt
-```text
+## RAG prompt
+
 Task
 Using {REFERENCE_DATASET} as a retrieval source, predict the label(s) for each comment in {EVALUATION_DATASET} among 9 labels.
 Hate speech may receive multi-label.
@@ -47,8 +47,8 @@ Label 8 (not hate speech) is assigned only as a single label.
 Label Definitions
 {LABEL_DEFINITIONS}
 
-CoT prompt
-```text
+## CoT prompt
+
 Task
 Predict the label(s) for each comment in {EVALUATION_DATASET} among 9 labels.
 Hate speech may receive multi-label.
@@ -69,8 +69,8 @@ Example
 Comment: If a woman had acted like Choi Soo-jong, people would have gone crazy---"Why is only the woman speaking politely? Is she some kind of servant?", "Poor thing, get a divorce.", "This is sexist TV, cancel the show.", and so on. But when a man does it, they call it "nice" and say they are a loving couple. This is exactly why I cannot help but hate those "Kimchi girls."
 Final label(s): 3,5
 
-Persona prompt
-```text
+## Persona prompt
+
 You are Korean and an expert in linguistics and content moderation.
 Your primary role is to analyze the given text, accurately identify and classify language-based hate speech, and, when necessary, briefly explain the rationale for your decision.
 
