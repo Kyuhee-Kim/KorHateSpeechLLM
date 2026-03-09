@@ -22,6 +22,7 @@ This document contains the prompt templates used in the experiments.
 
 ## Baseline prompt
 
+```text
 Task
 Predict the label(s) for each comment in {EVALUATION_DATASET}.
 Each comment may receive multi-label.
@@ -37,7 +38,7 @@ Label definitions
 - 7: Religion
 - 8: Not hate speech
 
-## RAG prompt
+**RAG prompt**
 
 Task
 Using {REFERENCE_DATASET} as a retrieval source, predict the label(s) for each comment in {EVALUATION_DATASET} among 9 labels.
@@ -47,7 +48,7 @@ Label 8 (not hate speech) is assigned only as a single label.
 Label Definitions
 {LABEL_DEFINITIONS}
 
-## CoT prompt
+**CoT prompt**
 
 Task
 Predict the label(s) for each comment in {EVALUATION_DATASET} among 9 labels.
@@ -62,14 +63,14 @@ Step 2. Check whether it contains expressions that match any category definition
 Step 3. Consider that labels 0--7 may co-occur (multi-label).
 Step 4. Select all applicable labels as the final answer.
 
-Label definitions
+Label Definitions
 {LABEL_DEFINITIONS}
 
 Example
 Comment: If a woman had acted like Choi Soo-jong, people would have gone crazy---"Why is only the woman speaking politely? Is she some kind of servant?", "Poor thing, get a divorce.", "This is sexist TV, cancel the show.", and so on. But when a man does it, they call it "nice" and say they are a loving couple. This is exactly why I cannot help but hate those "Kimchi girls."
 Final label(s): 3,5
 
-## Persona prompt
+**Persona prompt**
 
 You are Korean and an expert in linguistics and content moderation.
 Your primary role is to analyze the given text, accurately identify and classify language-based hate speech, and, when necessary, briefly explain the rationale for your decision.
@@ -91,6 +92,9 @@ Task
 Predict the label(s) for each comment in {EVALUATION_DATASET} among 9 labels.
 Hate speech may receive multi-label.
 Label 8 (not hate speech) is assigned only as a single label.
+
+Label Definitions
+{LABEL_DEFINITIONS}
 
 Label Definitions
 {LABEL_DEFINITIONS}
